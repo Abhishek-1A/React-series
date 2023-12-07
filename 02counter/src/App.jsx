@@ -5,11 +5,15 @@ import './App.css'
 
 function App() {
    //const counter=15;
-   let [counter, setCounter] = useState(15)
+   const [counter, setCounter] = useState(15)
    const addvalue = () =>{
     console.log("Added", counter);
-    counter = counter+1;
-    setCounter(counter)
+    // counter = counter+1;
+    setCounter(prevCounter => prevCounter+1)
+    setCounter(prevCounter => prevCounter+1)
+    setCounter(prevCounter => prevCounter+1)
+    setCounter(prevCounter => prevCounter+1)
+    
    }
     const removeval = ()=> {
       console.log("Removed", counter);
